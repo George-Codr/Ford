@@ -288,7 +288,7 @@ jobs:
           echo "archive_name=$ARCHIVE_NAME" >> "$GITHUB_OUTPUT"
 
       - name: Upload Built Toolchain Archive
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ steps.packager.outputs.archive_name }}
           path: ${{ steps.packager.outputs.archive_path }}
